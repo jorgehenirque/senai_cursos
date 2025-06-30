@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}   
+
+nav> ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+nav> ul li {
+    margin: 0 20px;
+    background-color: tomato;
+     border-radius: 10px;
+}
+nav> ul li> a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px;
+    display: block;
+   
+}
