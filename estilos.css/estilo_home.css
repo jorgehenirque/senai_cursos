@@ -54,10 +54,20 @@ nav> ul li> a {
     gap: 40px;
     padding: 40px;
 }
+.conteudo-flex>main>p{
+    padding: 5px;
+}
 .conteudo-flex main {
     flex: 1 1 50%;
     max-width: 900px;
 }
 .conteudo-flex .video-container {
     flex: 1 1 40%;
+}
+.sidebar-logo {
+    display: block;
+    margin: 32px auto 32px auto;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 10px;
 }
