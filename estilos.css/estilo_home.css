@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(245, 245, 245);
+}
 .header {
   display: flex;
   justify-content: start;
@@ -13,7 +17,9 @@
   height: auto;
   margin: 20px;
 }
-
+main > h1 {
+  text-align: center;
+}
 nav > ul {
   display: flex;
   list-style: none;
@@ -42,8 +48,8 @@ nav > ul li > a {
   flex-direction: column;
   align-items: flex-end;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: 30px;
+  padding: 30px;
 }
 .video-container > iframe {
   width: 100%;
@@ -63,6 +69,7 @@ nav > ul li > a {
 .conteudo-flex main {
   flex: 1 1 50%;
   max-width: 900px;
+  gap: 20px;
 }
 .conteudo-flex .video-container {
   flex: 1 1 40%;
@@ -85,4 +92,52 @@ nav > ul li > a {
 }
 .carrosel img {
   border-radius: 10px;
+}
+.video-sidebar {
+  border-left: 4px solid rgb(0, 0, 0);
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.container-cursos > {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 200px;
+}
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 70px; /* aumente o valor conforme desejar */
+  padding: 50px;
+}
+.curso-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.curso-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.curso-info {
+  flex: 1;
+}
+.curso-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
 }
